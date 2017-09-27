@@ -5,8 +5,8 @@ public class TwoIntegers
 	private int num2;
 	public TwoIntegers()
 	{
-		this.num1 = 0;
-		this.num2 = 0;
+		num1 = 0;
+		num2 = 0;
 	}
 	public TwoIntegers(int num1, int num2)
 	{
@@ -31,6 +31,28 @@ public class TwoIntegers
 	}
 	public String Arithmetic()
 	{
-		
+		return ("Sum: " + (num1 + num2) + "\nProduct: " + (num1 * num2) + "\nDifference: "
+				+ (num1 - num2) + "\nQuotient: " + (num1 / num2));
+	}
+	public double comparingIntegers()
+	{
+		double number = Double.NaN;
+		if(num1 > num2)
+		{
+			number = num1 ;
+		}
+		else if(num2 > num1)
+		{
+			number = num2;
+		}
+		return number;
+	}
+	public boolean oddOrEven()
+	{
+		return ((num1 % 2) == 0);
+	}
+	public boolean multiples()
+	{
+		return ((num1 % num2) == 0);
 	}
 }
